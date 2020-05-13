@@ -38,4 +38,13 @@
     $('#time-control .current-time').text( currentTime );
     $('#time-control input').val(percent);
   }, 1000);
+
+  $('volume-control input').on('input', function (event) {
+    player.setVolume(event.target.value);
+  });
+
+  $('#time-control .total-time').on('input', function (event) {
+    text( player.currentlyPlaying.duration );
+  });
+
 }
