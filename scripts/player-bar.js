@@ -46,4 +46,5 @@
   $('#time-control .total-time').on('input', function (event) {
     text( player.currentlyPlaying.duration );
   });
+  
 }
